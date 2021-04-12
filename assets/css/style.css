@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+/* HERO SECTION STYLES */
+#hero_section{
+    height: 80vh;
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_text{
+    width: 33%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero_text h6{
+    font-size: larger;
+    margin: 0;
+}
+
+.hero_text h2{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 3px 0 0 0;
+}
+.hero_text p{
+    font-size: larger;
+}
+
+.hero_text button{
+width: 326px;
+height: 64px;
+background: #4D8AF0;
+border: none;
+border-radius: 10px;
+color: white;
+font-size: large;
+outline: none;
+}
+.hero_image{
+    width:40%
+}
+
+/* SIGN UP FORM */
+
+.form_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+}
+
+.form{
+    font-family: 'Josefin Sans', sans-serif;
+    width:40%
+}
+.form h6{
+    font-size: xx-large;
+    margin: 0;
+}
+
+#form_header{
+    border-bottom: 0.507026px solid rgba(117, 116, 116, 0.5);;
+}
+
+.form label{
+    font-weight: bold;
+}
+.form_names, .username_gender, .age_track, .experience_employment, .education_email, .password_confirm, .submit{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    width: 100%;
+}
+.username_gender input, .age_track input,
+ .experience_employment input, .education_email input,
+  .password_confirm input, .submit input{
+    width: 90%;
+    background: #FFFFFF;
+    height: 35px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    outline: none;
+}
+.form_names input{
+    width: 85%;
+    background: #FFFFFF;
+    height: 35px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    outline: none;
+}
+
+.username_gender select{
+    width: 90%;
+    background: #FFFFFF;
+    height: 35px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    outline: none;
+}
+
+.input_component{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.submit{
+    align-items: center;
+}
+.form button{
+    background: #0284CA;
+    border-radius: 6px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    color:white;
+}
+
+
+.form_image{
+    width:45%
+}
+
+@media (max-width: 950px){
+    #hero_section {
+       flex-direction: column;
+       margin-bottom: 50px;
+   }
+    .hero_text{
+        order: 2;
+        width: 60%;
+    }
+    .hero_image{
+        order: 1;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+   .form_section {
+       flex-direction: column;
+   }
+   .form_image{
+       order: 1;
+       width: 60%;
+    }
+    .form{
+        order: 2;
+    }
+     }
