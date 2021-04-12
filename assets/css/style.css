@@ -11,6 +11,17 @@ div.logo-container {
   padding-left: 4rem;
 }
 
+div.logo-container img {
+  width: 40px;
+  height: 20px;
+}
+
+img.zuri,
+img.i4g{
+  position: relative;
+  top: 25px;
+}
+
 nav.nav {
  width: 50%;
 }
@@ -206,6 +217,20 @@ outline: none;
     #header,
     nav ul {
       flex-direction: column;
+    }
+    
+    img.zuri,
+    img.i4g   {
+  position: relative;
+  top: 20px;
+}
+
+    
+    img.i4g {
+      right: 0;
+      top: 0;
+      left: 45px;
+      margin-top: -8px;
     }
     
     #header {
