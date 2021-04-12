@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+div.logo-container {
+  width: 25%;
+  padding-left: 4rem;
+}
+
+nav.nav {
+  width: 55%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 4rem;
+  
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  
+}
+
+a.reg,
+a.login {
+  background: dodgerblue;
+  border-radius: 15px;
+}
+
+a.reg > li,
+a.login > li {
+}
+
 
 /* HERO SECTION STYLES */
 #hero_section{
