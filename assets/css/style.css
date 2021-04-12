@@ -33,7 +33,7 @@ ul a {
 a.reg,
 a.login {
   background: #4D8AF0;
- /* border-radius: 15px;*/
+  border-radius: 8px;
 }
 
 a.reg > li,
