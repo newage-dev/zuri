@@ -264,5 +264,10 @@ outline: none;
     .lets-get-started {
       text-align: center;
     }
+    
+    .submit {
+      display: block;
+      text-align: center;
+    }
 
   }
