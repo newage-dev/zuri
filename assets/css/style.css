@@ -12,7 +12,7 @@ div.logo-container {
 }
 
 nav.nav {
-  width: 55%;
+ width: 50%;
 }
 
 nav ul {
@@ -32,8 +32,8 @@ ul a {
 
 a.reg,
 a.login {
-  background: dodgerblue;
-  border-radius: 15px;
+  background: #4D8AF0;
+  border-radius: 8px;
 }
 
 a.reg > li,
@@ -94,7 +94,7 @@ outline: none;
 
 .form{
     font-family: 'Josefin Sans', sans-serif;
-    width:40%
+    width: 40%;
 }
 .form h6{
     font-size: xx-large;
@@ -158,7 +158,7 @@ outline: none;
     align-items: center;
 }
 .form button{
-    background: #0284CA;
+    background: #4D8AF0;
     border-radius: 6px;
     width: 80px;
     height: 30px;
@@ -195,4 +195,79 @@ outline: none;
     .form{
         order: 2;
     }
+    
      }
+     
+  /********************$***
+    MOBILE RESPONSIVENESS
+  *************************/
+  
+  @media (max-width: 450px) {
+    #header,
+    nav ul {
+      flex-direction: column;
+    }
+    
+    #header {
+      background: white;
+    }
+    
+    
+    div.logo-container,
+    nav ul {
+      padding: 0;
+    }
+    
+    nav.nav {
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+    nav ul a {
+      text-align: center;
+      color: black;
+    }
+    
+    a.reg,
+    a.login {
+      color: white;
+      border-radius: 15px;
+    }
+    
+    a.login {
+      margin-top: 15px;
+    }
+    
+    #hero_section {
+      flex-direction: column;
+      padding: 0;
+      margin-top: 10px;
+    }
+    
+    .hero_text {
+      width: 100%;
+      text-align: center;
+    }
+    
+    button.get-started {
+      width: 200px;
+    }
+    
+   .form_section {
+      padding: 0;
+    }
+    
+    .form {
+      width: 100%;
+    }
+    
+    .lets-get-started {
+      text-align: center;
+    }
+    
+    .submit {
+      display: block;
+      text-align: center;
+    }
+
+  }
