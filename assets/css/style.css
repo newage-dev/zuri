@@ -1,319 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
+/*------ DEFAULT STYLINGS ------*/
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*------ DEFAULT STYLINGS END HERE ------*/
+
+
 #header {
+  width: 100vw;
+  min-width: 100vw;
+  height: 80px;
   display: flex;
+  padding: 0 115px;
+  align-items: center;
   justify-content: space-between;
-  background: black;
+  background-color: #3F3F3F;
 }
 
 div.logo-container {
-  width: 25%;
-  padding-left: 4rem;
+  width: 166px;
+  height: 41.5px;
 }
 
-div.logo-container img {
-  width: 40px;
-  height: 20px;
+div.logo-container > img {
+  width: 100%;
 }
 
-img.zuri,
-img.i4g{
-  position: relative;
-  top: 25px;
-}
-
-nav.nav {
- width: 50%;
-}
-
-nav ul {
+.nav {
+  width: 550px;
+  max-width: 600px;
+  height: 51.09px;
   display: flex;
+  align-items: center;
+}
+
+.nav > ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  list-style: none;
-  padding-right: 4rem;
-  
 }
 
-ul a {
+.nav a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .register,
+.nav .login {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background-color: #4D8AF0;
+  transition: background-color ease-in .4s;
+}
+
+.nav .register:hover,
+.nav .login:hover {
   text-decoration: none;
-  color: white;
-  padding: 10px;
-  
+  background-color: #0d2652be;
 }
 
-a.reg,
-a.login {
-  background: #4D8AF0;
-  border-radius: 8px;
-}
 
-a.reg > li,
-a.login > li {
-}
 
 
 /* HERO SECTION STYLES */
-#hero_section{
-    height: 80vh;
-    display: flex;
-    padding: 2rem 4rem;
-    align-items: center;
-    justify-content: space-between;
+main {
+  padding: 0 50px;
+  font-size: 1.6rem;
+  min-width: 100vw;
 }
 
-.hero_text{
-    width: 33%;
-    font-family: 'Josefin Sans', sans-serif;
+#hero_section {
+  height: 85vh;
+  display: flex;
+  padding: 2em 4em;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.hero_text h6{
-    font-size: larger;
-    margin: 0;
+.hero_text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.hero_text h2{
-    font-size: xx-large;
-    font-weight: 900;
-    margin: 3px 0 0 0;
-}
-.hero_text p{
-    font-size: larger;
+.hero_text h6 {
+  line-height: 1.6;
+  font-size: 2.5rem;
 }
 
-.hero_text button{
-width: 326px;
-height: 64px;
-background: #4D8AF0;
-border: none;
-border-radius: 10px;
-color: white;
-font-size: large;
-outline: none;
+.hero_text h2 {
+  font-size: 4rem;
+  line-height: 1.7;
+  margin: 3px 0 0 0;
 }
+
+.hero_text p {
+  color: rgba(19, 18, 18, 0.678);
+  font-size: 2.3rem;
+  line-height: 1.4;
+}
+
+.hero_text .get-started {
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 2.3rem;
+  padding: 23px 110px;
+  border-radius: 10px;
+  background: #4D8AF0;
+  align-self: flex-start;
+  transition: background-color ease-in .4s;
+}
+
+.hero_text .get-started:hover {
+  background-color: #0d2652be;
+}
+
 .hero_image{
-    width:40%
+    width: 50%;
 }
 
-/* SIGN UP FORM */
-
-.form_section{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 4rem;
-    align-items: center;
+.hero_image > img {
+  width: 100%;
 }
 
-.form{
-    font-family: 'Josefin Sans', sans-serif;
-    width: 40%;
-}
-.form h6{
-    font-size: xx-large;
-    margin: 0;
-}
-
-#form_header{
-    border-bottom: 0.507026px solid rgba(117, 116, 116, 0.5);;
-}
-
-.form label{
-    font-weight: bold;
-}
-.form_names, .username_gender, .age_track, .experience_employment, .education_email, .password_confirm, .submit{
-    display: flex;
-    margin-bottom: 25px;
-    justify-content: space-between;
-    width: 100%;
-}
-.username_gender input, .age_track input,
- .experience_employment input, .education_email input,
-  .password_confirm input, .submit input{
-    width: 90%;
-    background: #FFFFFF;
-    height: 35px;
-    border: 1px solid #E6E6E6;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    outline: none;
-}
-.form_names input{
-    width: 85%;
-    background: #FFFFFF;
-    height: 35px;
-    border: 1px solid #E6E6E6;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    outline: none;
-}
-
-.username_gender select{
-    width: 90%;
-    background: #FFFFFF;
-    height: 35px;
-    border: 1px solid #E6E6E6;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    outline: none;
-}
-
-.input_component{
-    display: flex;
-    flex-direction: column;
-    width: 100%
-}
-
-.submit{
-    align-items: center;
-}
-.form button{
-    background: #4D8AF0;
-    border-radius: 6px;
-    width: 80px;
-    height: 30px;
-    border: none;
-    color:white;
-}
-
-
-.form_image{
-    width:45%
-}
-
-@media (max-width: 950px){
-    #hero_section {
-       flex-direction: column;
-       margin-bottom: 50px;
-   }
-    .hero_text{
-        order: 2;
-        width: 60%;
-    }
-    .hero_image{
-        order: 1;
-        width: 60%;
-        margin-bottom: 30px;
-    }
-   .form_section {
-       flex-direction: column;
-   }
-   .form_image{
-       order: 1;
-       width: 60%;
-    }
-    .form{
-        order: 2;
-    }
-    
-     }
-     
-  /********************$***
-    MOBILE RESPONSIVENESS
-  *************************/
-  
-  @media (max-width: 450px) {
-    #header,
-    nav ul {
-      flex-direction: column;
-    }
-    
-    img.zuri,
-    img.i4g   {
-  position: relative;
-  top: 20px;
-}
-
-    
-    img.i4g {
-      right: 0;
-      top: 0;
-      left: 45px;
-      margin-top: -8px;
-    }
-    
-    #header {
-      background: white;
-    }
-    
-    
-    div.logo-container,
-    nav ul {
-      padding: 0;
-    }
-    
-    nav.nav {
-      width: 50%;
-      margin: 0 auto;
-    }
-    
-    nav ul a {
-      text-align: center;
-      color: black;
-    }
-    
-    a.reg,
-    a.login {
-      color: white;
-      border-radius: 15px;
-    }
-    
-    a.login {
-      margin-top: 15px;
-    }
-    
-    #hero_section {
-      flex-direction: column;
-      padding: 0;
-      margin-top: 10px;
-    }
-    
-    .hero_text {
-      width: 100%;
-      text-align: center;
-    }
-    
-    button.get-started {
-      width: 200px;
-    }
-    
-   .form_section {
-      padding: 0;
-    }
-    
-    .form {
-      width: 100%;
-    }
-    
-    .form_names, .username_gender, .age_track, .experience_employment, .education_email, .password_confirm, .submit{
-    display: flex;
-    margin-bottom: 25px;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    }
-
-    form {
-    padding: 15px;
-    }
-
-    .input_component {
-    margin-top: 15px;
-    }
-    
-    .lets-get-started {
-      text-align: center;
-    }
-    
-    .submit {
-      display: block;
-      text-align: center;
-    }
-    
-    .login-btn {
-      text-decoration: none;
-      color: #4D8AF0;
-    }
-
-  }
