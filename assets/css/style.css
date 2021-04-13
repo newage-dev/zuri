@@ -11,6 +11,17 @@ div.logo-container {
   padding-left: 4rem;
 }
 
+div.logo-container img {
+  width: 40px;
+  height: 20px;
+}
+
+img.zuri,
+img.i4g{
+  position: relative;
+  top: 25px;
+}
+
 nav.nav {
  width: 50%;
 }
@@ -208,6 +219,20 @@ outline: none;
       flex-direction: column;
     }
     
+    img.zuri,
+    img.i4g   {
+  position: relative;
+  top: 20px;
+}
+
+    
+    img.i4g {
+      right: 0;
+      top: 0;
+      left: 45px;
+      margin-top: -8px;
+    }
+    
     #header {
       background: white;
     }
@@ -261,6 +286,22 @@ outline: none;
       width: 100%;
     }
     
+    .form_names, .username_gender, .age_track, .experience_employment, .education_email, .password_confirm, .submit{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    form {
+    padding: 15px;
+    }
+
+    .input_component {
+    margin-top: 15px;
+    }
+    
     .lets-get-started {
       text-align: center;
     }
@@ -268,6 +309,11 @@ outline: none;
     .submit {
       display: block;
       text-align: center;
+    }
+    
+    .login-btn {
+      text-decoration: none;
+      color: #4D8AF0;
     }
 
   }
