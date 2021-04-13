@@ -281,8 +281,9 @@ main {
   .hero_image {
     position: absolute;
     width: 90%;
-    top: 50%;
-    left: -15%;
+    margin-top: 200px;
+    top: auto;
+    left: auto;
     z-index: 0;
     opacity: .3;
   }
@@ -353,15 +354,6 @@ main {
     font-size: 1.75rem;
     padding: 18px 55px;
     align-self: center;
-  }
-
-  .hero_image {
-    position: absolute;
-    width: 40%;
-    top: 50%;
-    left: -15%;
-    z-index: 0;
-    opacity: .3;
   }
 }
 
