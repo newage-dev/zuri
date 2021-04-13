@@ -54,7 +54,7 @@ div.logo-container > img {
   align-items: center;
 }
 
-.nav > ul {
+.nav ul {
   width: 100%;
   height: auto;
   display: flex;
@@ -197,18 +197,6 @@ main {
 
 @media (max-width: 1000px) {
 
-  #header {
-    padding: 0 80px;
-  }
-  
-  .nav {
-    width: 520px;
-    max-width: 550px;
-  }
-
-  main {
-    padding: 0 15px;
-  }
 
   .hero_text h6 {
     font-size: 2.3rem;
@@ -230,21 +218,25 @@ main {
 
 
 @media (max-width: 876px) {
-
-  #header {
-    padding: 0 80px;
-  }
   
   .nav {
-    width: 520px;
-    max-width: 550px;
     justify-content: flex-end;
   }
 
-  .nav ul {
-    display: none;
+  nav ul {
+   display: flex;
+   flex-direction:column;
+   margin-top: 100px; 
+   background-color: #3f3f3f;
+   width: 80%;
   }
 
+  nav ul li{
+      margin: 20px 5px;
+  }
+  .nav ul.show{
+      display: none;
+  }
   .nav .hamburger {
     width: 32px;
     display: block;
@@ -387,15 +379,6 @@ main {
     justify-content: flex-end;
   }
 
-  .nav ul {
-    display: none;
-  }
-
-  .nav .hamburger {
-    width: 32px;
-    display: block;
-  }
-
   main {
     padding: 0 15px;
     font-size: 1.6rem;
@@ -410,7 +393,6 @@ main {
   .hero_text {
     width: 90%;
     text-align: center;
-    z-index: 999;
   }
 
   .hero_text h6 {
@@ -427,31 +409,14 @@ main {
   }
   
   .hero_text .get-started {
-    font-size: 1.7rem;
-    padding: 17.5px 60px;
-    align-self: center;
-  }
 
-  .hero_image {
-    position: absolute;
-    width: 90%;
-    top: 40%;
     left: -10%;
-    z-index: 0;
     opacity: .3;
   }
 }
 
 
 @media (max-width: 607px) {
-
-  body {
-    background: #E5E5E5;
-  }
-  
-  #header {
-    padding: 0 40px;
-  }
 
   div.logo-container {
     width: 150px;
@@ -466,14 +431,6 @@ main {
     justify-content: flex-end;
   }
 
-  .nav ul {
-    display: none;
-  }
-
-  .nav .hamburger {
-    width: 30px;
-    display: block;
-  }
 
   main {
     padding: 0 10px;
@@ -488,8 +445,6 @@ main {
 
   .hero_text {
     width: 100%;
-    text-align: center;
-    z-index: 999;
   }
 
   .hero_text h6 {
@@ -505,16 +460,7 @@ main {
     line-height: 1.9;
     font-size: 2.1rem;
   }
-  
-  .hero_text .get-started {
-    font-size: 1.7rem;
-    padding: 17px 50px;
-    align-self: center;
-  }
 
-  .hero_image {
-    display: none;
-  }
 }
 
 
@@ -542,15 +488,6 @@ main {
     justify-content: flex-end;
   }
 
-  .nav ul {
-    display: none;
-  }
-
-  .nav .hamburger {
-    width: 30px;
-    display: block;
-  }
-
   main {
     padding: 0 10px;
     font-size: 1.6rem;
@@ -562,15 +499,7 @@ main {
     flex-direction: column;
   }
 
-  .hero_text {
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-  }
 
-  .hero_text h6 {
-    font-size: 2.8rem;
-  }
   
   .hero_text h2 {
     font-size: 3.7rem;
@@ -583,98 +512,13 @@ main {
   }
   
   .hero_text .get-started {
-    font-size: 1.7rem;
-    padding: 17px 50px;
-    align-self: center;
-  }
 
-  .hero_image {
-    display: none;
-  }
-}
-
-
-
-
-@media (max-width: 432px) {
-  
-  body {
-    background: #E5E5E5;
-  }
-
-  #header {
-    padding: 0 10px;
-  }
-
-  div.logo-container {
-    width: 120px;
-    display: flex;
-    min-height: 100%;
-    min-width: 120px;
-  }
-
-  .nav {
-    width: 520px;
-    max-width: 550px;
-    justify-content: flex-end;
-  }
-
-  .nav ul {
-    display: none;
-  }
-
-  .nav .hamburger {
-    width: 30px;
-    display: block;
-  }
-
-  main {
-    padding: 0 10px;
-  }
-
-  #hero_section {
-    width: 100%;
-    min-width: 200px;
-    position: relative;
-    flex-direction: column;
-  }
-
-  .hero_text {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    z-index: 999;
-  }
-
-  .hero_text h6 {
-    font-size: 2.5rem;
-  }
-  
-  .hero_text h2 {
-    font-size: 3.4rem;
-  }
-  
-  .hero_text p {
-    color: rgba(63, 63, 63, 0.884);
-    line-height: 1.9;
-    font-size: 1.75rem;
-  }
-  
-  .hero_text .get-started {
-    display: block;
   }
 }
 
 
 @media (max-width: 380px) {
 
-  body {
-    background: #E5E5E5;
-  }
-  
-  #header {
-    padding: 0 10px;
-  }
 
   div.logo-container {
     width: 120px;
@@ -689,15 +533,6 @@ main {
     justify-content: flex-end;
   }
 
-  .nav ul {
-    display: none;
-  }
-
-  .nav .hamburger {
-    width: 30px;
-    display: block;
-  }
-
   main {
     padding: 0 10px;
   }
@@ -709,18 +544,8 @@ main {
   }
 
   .hero_text {
-    width: 95%;
     padding: 14px;
-    text-align: center;
-    z-index: 999;
-  }
 
-  .hero_text h6 {
-    font-size: 2.3rem;
-  }
-  
-  .hero_text h2 {
-    font-size: 3rem;
   }
   
   .hero_text p {
@@ -732,10 +557,7 @@ main {
   .hero_text .get-started {
     font-size: 1.5rem;
     padding: 13px 35px;
-    align-self: center;
   }
 
-  .hero_image {
-    display: none;
-  }
+
 }
