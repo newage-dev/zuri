@@ -191,6 +191,7 @@ main {
   main {
     padding: 0 15px;
     font-size: 1.6rem;
+
   }
 }
 
@@ -281,7 +282,7 @@ main {
   .hero_image {
     position: absolute;
     width: 90%;
-    margin-top: 200px;
+    margin-top: 230px;
     top: auto;
     left: auto;
     z-index: 0;
@@ -307,10 +308,6 @@ main {
     width: 520px;
     max-width: 550px;
     justify-content: flex-end;
-  }
-
-  .nav ul {
-    display: none;
   }
 
   .nav .hamburger {
@@ -403,7 +400,7 @@ main {
   .hero_text .get-started {
 
     left: -10%;
-    opacity: .3;
+    opacity: .8;
   }
 }
 
@@ -501,10 +498,6 @@ main {
     color: rgba(63, 63, 63, 0.884);
     line-height: 1.9;
     font-size: 2rem;
-  }
-  
-  .hero_text .get-started {
-
   }
 }
 
