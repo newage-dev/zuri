@@ -132,7 +132,7 @@ main {
 .hero_text h6 {
   line-height: 1.6;
   font-size: 2.5rem;
-}
+} 
 
 .hero_text h2 {
   font-size: 4rem;
@@ -634,12 +634,14 @@ main {
 
   #hero_section {
     width: 100%;
+    min-width: 200px;
     position: relative;
     flex-direction: column;
   }
 
   .hero_text {
     width: 100%;
+    position: relative;
     text-align: center;
     z-index: 999;
   }
